@@ -18,6 +18,10 @@ You'll need Python 3.11+. I recommend setting up a virtual environment:
 ```bash
 python -m venv venv
 source venv/Scripts/activate # on Windows
+
+or
+
+.\venv\Scripts\python.exe main.py
 ```
 
 ### 2. Install Dependencies
