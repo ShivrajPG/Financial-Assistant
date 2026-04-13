@@ -21,13 +21,13 @@ The goal of this project is to build an AI agent that doesn't just hallucinate s
 Ensure you have the project files in a directory.
 
 ### 2. Set Up a Virtual Environment (Recommended)
-`ash
+```bash
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
-`
+```
 
 ### 3. Install Dependencies
 ```bash
@@ -37,9 +37,9 @@ pip install -r requirements.txt
 
 ### 4. Configure API Keys
 Create a .env file in the root directory of the project:
-`
+```bash
 GEMINI_API_KEY=your_actual_api_key_here
-`
+```
 Replace your_actual_api_key_here with your real Google Gemini API key.
 
 ### 5. Ingest SEC Filings Data
