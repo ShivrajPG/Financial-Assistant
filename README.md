@@ -30,7 +30,7 @@ source venv/bin/activate
 `
 
 ### 3. Install Dependencies
-`ash
+`bash
 pip install -r requirements.txt
 `
 **Note for Windows users**: If you encounter issues with PyPortfolioOpt or cvxpy, ensure you have the Microsoft Visual C++ Build Tools installed. However, pre-built wheels should work on recent Python versions.
@@ -44,7 +44,7 @@ Replace your_actual_api_key_here with your real Google Gemini API key.
 
 ### 5. Ingest SEC Filings Data
 Before running the agent, you need to populate the local vector database with SEC filings data. Run the ingestion script for one or more tickers (e.g., Apple):
-`ash
+`bash
 python scripts/ingest.py AAPL
 `
 - This will download the latest 10-K filing for AAPL, chunk it, and embed it into ChromaDB.
@@ -54,7 +54,7 @@ python scripts/ingest.py AAPL
 
 ### 6. Run the Agent
 Once ingestion is complete, start the interactive CLI:
-`ash
+`bash
 python main.py
 `
 - Type your financial questions (e.g., "What are Apple's main risks?" or "Analyze AAPL's portfolio with MSFT").
